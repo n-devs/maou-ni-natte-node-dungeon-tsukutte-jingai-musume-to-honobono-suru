@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useSpring, animated as a } from 'react-spring'
 import { makeStyles } from '@material-ui/core/styles';
 import Rating from '@material-ui/lab/Rating';
-import { Link, Button } from '@material-ui/core';
+import { Link } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles((theme) => ({
@@ -30,7 +30,6 @@ function FaceCard(props) {
         config: { mass: 5, tension: 500, friction: 80 }
     })
     return (
-        <div>
             <div style={{
                 height: window.innerHeight - 100,
                 display: 'flex',
@@ -97,21 +96,7 @@ function FaceCard(props) {
                     transform: transform.interpolate(t => `${t} rotateX(180deg)`)
                 }} />
             </div>
-            <div style={{
-                height: 100,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-            }}>
-                <Button style={{
-                    margin:5
-                }} variant="contained" color="primary">อ่านตอนแรก</Button>
-                <Button style={{
-                    margin:5
-                }} variant="contained" color="primary">อ่านตอนล่าสุด</Button>
-            </div>
-
-        </div>
+           
     )
 }
 
