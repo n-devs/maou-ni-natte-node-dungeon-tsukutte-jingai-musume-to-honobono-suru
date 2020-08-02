@@ -1,0 +1,18 @@
+{
+    "button": {
+        "login": "Login",
+        "register": "Register",
+        "language": "Language",
+        "th": "Thai",
+        "eng": "English"
+    },
+    "input": {
+        "placeholder": {
+            "search": "Are you looking for new knowledge? Search now!"
+        }
+    },
+    "nav":{
+        "title":"Hello My",
+        "sub":"Share your knowledge on our Blackboard."
+    }
+}

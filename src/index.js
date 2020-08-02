@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import './i18n';
 import App from "./App";
 
-const rootElement = document.getElementById("root");
+// const rootElement = document.getElementById("root");
+
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Suspense>
     <App />
-  </React.StrictMode>,
-  rootElement
+  </React.Suspense>,
+   document.getElementById("root")
 );

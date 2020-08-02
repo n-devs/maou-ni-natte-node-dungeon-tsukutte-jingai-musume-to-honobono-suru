@@ -1,13 +1,24 @@
 {
   "name": "maou-ni-natte-node-dungeon-tsukutte-jingai-musume-to-honobono-suru",
   "version": "1.0.0",
+  "private": true,
   "description": "Maou ni Natte node Dungeon Tsukutte Jingai Musume to Honobono suru",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "i18next": "^19.6.3",
+    "i18next-browser-languagedetector": "^5.0.0",
+    "i18next-xhr-backend": "^3.2.2",
+    "lodash-es": "^4.17.15",
     "react": "16.12.0",
     "react-dom": "16.12.0",
-    "react-scripts": "3.0.1"
+    "react-i18next": "^11.7.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.0.1",
+    "react-spring": "^8.0.27",
+    "react-use-gesture": "^7.0.15"
   },
   "devDependencies": {
     "typescript": "3.8.3"
@@ -18,5 +29,13 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "workspaces": [
+    "src/*"
+  ],
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
